@@ -1,14 +1,12 @@
 import React from 'react';
-import './registration.scss'
+import './singup.scss';
 import Input from '../input/Input';
 import Button from '../button/Button';
 
-export default function Registration() {
+export default function Singup() {
     return (
-        <div className='registration'>
-            <h2>Registration</h2>
-            <Input type="text" placeholder="Enter your name"/>
-            <Input type="text" placeholder="Enter your name"/>
+        <div className='sing-up'>
+            <h2>Sing Up</h2>
             <Input type="text" placeholder="Enter your name"/>
             <Input type="text" placeholder="Enter your name"/>
             <Button

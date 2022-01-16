@@ -1,0 +1,16 @@
+.registration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    max-width: 600px;
+    height: 400px;
+    
+    margin: 0 auto;
+
+    & h2{
+        margin-top: 60px;
+        text-transform: uppercase;
+    }
+}
