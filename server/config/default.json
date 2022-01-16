@@ -1,0 +1,5 @@
+{
+    "serverPort" : 5000,
+    "dbUrl" : "mongodb+srv://kizen-vitali:yfK54acPrA7U3fL@cluster0.dzn0k.mongodb.net/Cluster0?retryWrites=true&w=majority",
+    "secretKey" : "mern-secket-key"
+}
