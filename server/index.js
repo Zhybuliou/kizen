@@ -6,7 +6,9 @@ const authRouter = require('./routes/auth.routes')
 const app = express(); // create server.
 const PORT = config.get('serverPort')
 const dbUrl = config.get('dbUrl')
+const corsMiddleware = require('./middleware/cors.middleware');
 
+app.use(corsMiddleware);
 app.use(express.json());
 app.use("/api/auth", authRouter);
 

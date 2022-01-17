@@ -7,8 +7,8 @@ export default function Singup() {
     return (
         <div className='sing-up'>
             <h2>Sing Up</h2>
-            <Input type="text" placeholder="Enter your name"/>
-            <Input type="text" placeholder="Enter your name"/>
+            <Input type="text" placeholder="Name"/>
+            <Input type="password" placeholder="Password"/>
             <Button
                   border="none"
                   color="#ccc"
