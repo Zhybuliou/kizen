@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
     <div>
-     <Navbar/>
+     <Navbar isAuth={isAuth} />
      {!isAuth &&
       <Routes>
       <Route exact path="/" element={<Home />} />
