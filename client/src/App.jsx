@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
 import Footer from './components/footer/Footer';
 import Registration from './components/registration/Registration';
 import Singup from './components/singup/Singup';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import {useSelector} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
+import { auth } from './actions/user';
 
 
 function App() {
   const isAuth = useSelector(state => state.user.isAuth);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(auth());
+  });
 
 
   return (
