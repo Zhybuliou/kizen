@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const config = require('config');
-const authRouter = require('./routes/auth.routes')
+const authRouter = require('./routes/auth.routes');
+const fileRouter = require('./routes/file.routes');
 
 const app = express(); // create server.
 const PORT = config.get('serverPort')

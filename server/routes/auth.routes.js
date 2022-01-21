@@ -6,6 +6,8 @@ const config = require('config');
 const {check, validationResult} = require('express-validator');
 const router = new Router();
 const authMiddleware = require('../middleware/auth.middleware');
+const fileService = require('../services/fileService');
+const File = require('../models/File');
 
 
 router.post('/registration', 
@@ -31,6 +33,7 @@ async (req, res) => {
         const hashPassword = await bcrypt.hash(password, 8);
         const user = new User({email, password: hashPassword});
         await user.save();
+        await fileService.createDir(new File({user:user.id, name: ''}));
         return res.json({message: "User was created"})
 
 

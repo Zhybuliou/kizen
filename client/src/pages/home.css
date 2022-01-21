@@ -1,0 +1,39 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-page__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-page__img img {
+  width: 300px;
+  margin-top: 40px;
+}
+
+.home-page__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 120px;
+}
+/*# sourceMappingURL=home.css.map */
