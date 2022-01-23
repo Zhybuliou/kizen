@@ -6,9 +6,9 @@ const File = new Schema({
     accessLink: {type: String},
     size: {type: Number, default: 0},
     path: {type: String, default: ''},
-    user: {type: ObjectId, ref:'User'},
-    parent: {type: ObjectId, ref:'File'},
-    childs: [{type: ObjectId, ref:'File'}]
+    user: {type:  Schema.Types.ObjectId  , ref:'User'},
+    parent: {type:  Schema.Types.ObjectId  , ref:'File'},
+    childs: [{type:  Schema.Types.ObjectId  , ref:'File'}]
 });
 
 module.exports = model('File', File);
