@@ -4,6 +4,7 @@ import React from 'react';
 const File = ({file}) => {
     return (
         <div className='file'>
+            <div>-------------------------------------</div>
             <div className="file__name">{file.name}</div>
             <div className="file__date">{file.date}</div>
         </div>
