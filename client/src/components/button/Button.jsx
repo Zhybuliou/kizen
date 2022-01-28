@@ -3,6 +3,7 @@ import './button.scss';
 
 
 const Button = ({
+  styleBtn,
   position,
   top,
   left,
@@ -17,7 +18,7 @@ const Button = ({
   type,
 }) => (
   <button
-    className="blue-button"
+    className={`blue-button ${styleBtn}`}
     onClick={onClick}
     type={type}
     style={{
