@@ -5,9 +5,20 @@
     display: flex;
     justify-content: space-between;
 
-    width: 300px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .files-btn__create-folder{
     margin-left: 20px;
+}
+.row-white{
+    cursor: pointer;
+}
+.row-green{
+    background-color: #5F9EA0;
+    cursor: pointer;
+}
+.file__name{
+    padding: 5px;
+    font-size: 24px;
 }

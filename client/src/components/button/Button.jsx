@@ -7,6 +7,7 @@ const Button = ({
   position,
   top,
   left,
+  right,
   border,
   color,
   colorText,
@@ -31,6 +32,7 @@ const Button = ({
       position,
       top,
       left,
+      right
     }}
   >
     {children}
